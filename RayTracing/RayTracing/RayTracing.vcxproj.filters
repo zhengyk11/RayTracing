@@ -18,7 +18,13 @@
     <ClInclude Include="Color.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="vector3.h">
+    <ClInclude Include="Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,7 +35,10 @@
     <ClCompile Include="Color.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vector3.cpp">
+    <ClCompile Include="Ray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
