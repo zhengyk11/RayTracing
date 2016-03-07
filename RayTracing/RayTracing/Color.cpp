@@ -1,10 +1,10 @@
-#include"color.h"
+#include"Color.h"
 #include<sstream>
 
 Color::Color(){
-	r=0;
-	g=0;
-	b=0;
+	r = 0;
+	g = 0;
+	b = 0;
 }
 Color::Color(double R, double G, double B){
 	r = R;
