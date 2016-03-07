@@ -7,7 +7,7 @@ class Color {
 public:
 	Color();
 	Color( double R, double G, double B);
-	~Color();
+	~Color(){}
 
 	friend Color operator + ( const Color& , const Color& );
 	friend Color operator - ( const Color& , const Color& );

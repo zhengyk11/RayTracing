@@ -1,4 +1,5 @@
 #include"color.h"
+#include<sstream>
 
 Color::Color(){
 	r=0;
@@ -10,7 +11,7 @@ Color::Color(double R, double G, double B){
 	g = G;
 	b = B;
 }
-Color::~Color(){}
+
 Color operator + (const Color& c1, const Color& c2){
 	return Color(c1.r + c2.r, c1.g + c2.g, c1.b + c2.b);
 }
@@ -27,16 +28,20 @@ Color operator / (const Color& c, const double& k){
 	return Color(c.r / k, c.g / k, c.b / k);
 }
 Color& operator += (Color& c1, const Color& c2){
-	return c1 = c1 + c2;
+	c1 = c1 + c2;
+	return c1;
 }
 Color& operator -= (Color& c1, const Color& c2){
-	return c1 = c1 - c2;
+	c1 = c1 - c2;
+	return c1;
 }
 Color& operator *= (Color& c, const double& k){
-	return c = c * k;
+	c = c * k;
+	return c;
 }
 Color& operator /= (Color& c, const double& k){
-	return c = c / k;
+	c = c / k;
+	return c;
 }
 std::ostream& operator << (std::ostream& cout, Color& c){
 	cout << c.r << ' ' << c.g << ' ' << c.b;
